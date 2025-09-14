@@ -1,10 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
-const navigationLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/programs", label: "Programs" },
-  ];
+import { SITE_CONFIG } from '@/lib/constants';
+import { NAVIGATION_LINKS } from '@/lib/constants';
+
 
 export default function Header() {
     return (
@@ -12,13 +11,18 @@ export default function Header() {
         <nav className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="text-2xl font-bold text-blue-600">
-                <Link href="/">Your Incubator</Link>
-            </div>
+            <Link href="/" className="flex items-center">
+                <Image 
+                    src="/TensorLogo.png"
+                    alt={SITE_CONFIG.name}
+                    width={120}
+                    height={40}
+                />
+            </Link>
             
             {/* Navigation */}
             <div className="hidden md:flex space-x-8">
-                {navigationLinks.map((link) => (
+                {NAVIGATION_LINKS.map((link) => (
                 <Link 
                 key={link.href}
                 href={link.href} 
