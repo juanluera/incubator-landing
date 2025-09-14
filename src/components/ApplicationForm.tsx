@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 export default function ApplicationForm() {
+    const [cvFile, setCvFile] = useState<File | null>(null);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -13,17 +14,45 @@ export default function ApplicationForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (file) {
+        if (file.type !== 'application/pdf' && !file.type.includes('word') && !file.type.includes('document')){
+          alert('Please upload a PDF or Word document');
+          return;
+        }
+
+        if (file.size > 2*1024*1024) {
+          alert('File size must be less than 2MB');
+          return;
+        }
+        setCvFile(file);
+      }
+      
+    }
+
+      
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
 
         try{
+              // Create FormData for file upload
+            const submitData = new FormData();
+            submitData.append('name', formData.name);
+            submitData.append('email', formData.email);
+            submitData.append('company', formData.company);
+            submitData.append('description', formData.description);
+            submitData.append('stage', formData.stage);
+            
+            if (cvFile) {
+                submitData.append('cv', cvFile);
+            }
+
             const response = await fetch('/api/submit-application', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
+                body: submitData,
             })
 
             if (response.ok) {
@@ -35,6 +64,7 @@ export default function ApplicationForm() {
                     description: '',
                     stage: ''
                 });
+                setCvFile(null);
             }else{
                 alert('Failed to submit application. Please try again.');
             }
@@ -124,6 +154,27 @@ export default function ApplicationForm() {
               <option value="growth">Ready to scale</option>
             </select>
           </div>
+
+            <div className="mb-6">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                    CV/Resume *
+                </label>
+                <input
+                    type="file"
+                    accept=".pdf,.doc,.docx"
+                    onChange={handleFileChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                    required
+                />
+                <p className="text-xs text-gray-500 mt-1">
+                    Upload PDF or Word document (max 2MB)
+                </p>
+                {cvFile && (
+                    <p className="text-sm text-green-600 mt-1">
+                        Selected: {cvFile.name} ({(cvFile.size / 1024 / 1024).toFixed(2)} MB)
+                    </p>
+                )}
+            </div>
     
           <button
             type="submit"
