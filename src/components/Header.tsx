@@ -7,7 +7,7 @@ import { NAVIGATION_LINKS } from '@/lib/constants';
 
 export default function Header() {
     return (
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors">
         <nav className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -17,6 +17,7 @@ export default function Header() {
                     alt={SITE_CONFIG.name}
                     width={120}
                     height={40}
+                    className="dark:invert"
                 />
             </Link>
             
@@ -26,7 +27,7 @@ export default function Header() {
                 <Link 
                 key={link.href}
                 href={link.href} 
-                className="hover:text-blue-600 transition-colors"
+                className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                 {link.label}
                 </Link>
@@ -35,10 +36,10 @@ export default function Header() {
             
             {/* CTA Button */}
             <Link
-              href="/apply" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              href="/waitlist" 
+              className="bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
             >
-              Apply Now
+              Join the Waitlist
             </Link>
           </div>
         </nav>
