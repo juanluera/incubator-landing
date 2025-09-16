@@ -25,8 +25,8 @@ export default function About() {
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-colors text-center">
                 <div className="mb-4">
                   <Image 
-                    src="/Angel.jpg"
-                    alt="Angel - Co-Founder"
+                    src="/AngelLuera.jpg"
+                    alt="Juan Angel Luera - Co-Founder"
                     width={120}
                     height={120}
                     className="rounded-full mx-auto object-cover"
@@ -45,8 +45,8 @@ export default function About() {
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-colors text-center">
                 <div className="mb-4">
                   <Image 
-                    src="/salberdi.jpg"
-                    alt="Salberdi - Co-Founder"
+                    src="/SebastianAlberdi.jpg"
+                    alt="Sebastian Alberdi - Co-Founder"
                     width={120}
                     height={120}
                     className="rounded-full mx-auto object-cover"
