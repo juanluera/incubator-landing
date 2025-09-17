@@ -32,7 +32,7 @@ export default function About() {
                     className="rounded-full mx-auto object-cover"
                   />
                 </div>
-                <Link href="https://www.linkedin.com/in/juanluera/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://juanluera.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Juan Angel Luera</h3>
                 </Link>
                 <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Co-Founder</p>

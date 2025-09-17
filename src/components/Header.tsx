@@ -1,11 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 import { SITE_CONFIG } from '@/lib/constants';
 import { NAVIGATION_LINKS } from '@/lib/constants';
 
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
       <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors">
         <nav className="max-w-6xl mx-auto px-4 py-4">
@@ -21,7 +26,7 @@ export default function Header() {
                 />
             </Link>
             
-            {/* Navigation */}
+            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
                 {NAVIGATION_LINKS.map((link) => (
                 <Link 
@@ -34,14 +39,50 @@ export default function Header() {
             ))}
             </div>
             
-            {/* CTA Button */}
+            {/* Desktop CTA Button */}
             <Link
               href="/waitlist" 
-              className="bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
+              className="hidden md:inline-block bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
             >
               Join the Waitlist
             </Link>
+
+            {/* Mobile Hamburger Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
+              aria-label="Toggle menu"
+            >
+              <span className={`w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+              <span className={`w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </button>
           </div>
+
+          {/* Mobile Menu Dropdown */}
+          {isMenuOpen && (
+            <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+              <div className="px-4 py-2 space-y-1">
+                {NAVIGATION_LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/waitlist"
+                  className="block mt-4 bg-blue-600 dark:bg-blue-700 text-white px-3 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors text-center"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Join the Waitlist
+                </Link>
+              </div>
+            </div>
+          )}
         </nav>
       </header>
     );
