@@ -7,9 +7,9 @@ export async function POST(request: NextRequest){
 
         const name = formData.get('name') as string;
         const email = formData.get('email') as string;
-        const company = formData.get('company') as string;
+        const school = formData.get('school') as string;
         const description = formData.get('description') as string;
-        const stage = formData.get('stage') as string;
+        const status = formData.get('status') as string;
         const cvFile = formData.get('cv') as File;
 
 
@@ -39,9 +39,9 @@ export async function POST(request: NextRequest){
             .insert([{
                 name,
                 email,
-                company,
+                school,
                 description,
-                stage,
+                status,
                 cv_url: cvUrl,
                 cv_filename: cvFilename
             }])

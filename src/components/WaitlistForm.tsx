@@ -7,9 +7,9 @@ export default function WaitlistForm() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        company: '',
+        school: '',
         description: '',
-        stage: ''
+        status: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -42,9 +42,9 @@ export default function WaitlistForm() {
             const submitData = new FormData();
             submitData.append('name', formData.name);
             submitData.append('email', formData.email);
-            submitData.append('company', formData.company);
+            submitData.append('school', formData.school);
             submitData.append('description', formData.description);
-            submitData.append('stage', formData.stage);
+            submitData.append('status', formData.status);
             
             if (cvFile) {
                 submitData.append('cv', cvFile);
@@ -60,9 +60,9 @@ export default function WaitlistForm() {
                 setFormData({
                     name: '',
                     email: '',
-                    company: '',
+                    school: '',
                     description: '',
-                    stage: ''
+                    status: ''
                 });
                 setCvFile(null);
             }else{
@@ -115,43 +115,45 @@ export default function WaitlistForm() {
     
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Company Name
+              School/University *
             </label>
             <input
               type="text"
-              value={formData.company}
-              onChange={(e) => setFormData({...formData, company: e.target.value})}
+              value={formData.school}
+              onChange={(e) => setFormData({...formData, school: e.target.value})}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              placeholder="e.g., MIT, Stanford, Universidad de Chile"
+              required
             />
           </div>
     
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Business Description
+              Biggest Accomplishment
             </label>
             <textarea
               value={formData.description}
               onChange={(e) => setFormData({...formData, description: e.target.value})}
               rows={4}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-              placeholder="Tell us about your business idea..."
+              placeholder="Describe your most significant achievement (academic, professional, personal project, etc.)"
             />
           </div>
     
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Development Stage
+              Current Status *
             </label>
             <select
-              value={formData.stage}
-              onChange={(e) => setFormData({...formData, stage: e.target.value})}
+              value={formData.status}
+              onChange={(e) => setFormData({...formData, status: e.target.value})}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              required
             >
-              <option value="">Select stage</option>
-              <option value="idea">Just an idea</option>
-              <option value="mvp">Building MVP</option>
-              <option value="traction">Early traction</option>
-              <option value="growth">Ready to scale</option>
+              <option value="">Select your status</option>
+              <option value="student">Student</option>
+              <option value="recent-grad">Recent Graduate</option>
+              <option value="professional">Professional</option>
             </select>
           </div>
 
