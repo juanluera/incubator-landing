@@ -124,7 +124,7 @@ export default function About() {
                 </Link>
                 <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">AI Entrepreneur & MIT Alumni</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with Master's degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform.
+                  MIT alumni with Master&apos;s degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform.
                 </p>
               </div>
 
