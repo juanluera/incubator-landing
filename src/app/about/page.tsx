@@ -132,13 +132,24 @@ export default function About() {
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-colors text-center">
                 <div className="mb-4">
                   <div className="w-[120px] h-[120px] bg-gray-200 dark:bg-gray-600 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-gray-400 dark:text-gray-500 text-sm">Photo</span>
+                  <Image 
+                    src="/AbrahamCristiani.jpg"
+                    alt="Abraham Cristiani - Advisor"
+                    width={120}
+                    height={120}
+                    className="rounded-full mx-auto object-cover w-[120px] h-[120px]"
+                  />
                   </div>
+                  
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Advisor Name</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Title</p>
+                <Link href="https://www.linkedin.com/in/abrahamcristiani/" target="_blank" rel="noopener noreferrer">
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Abraham Cristiani</h3>
+                </Link>                
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
+                  AI Forward Deployed Engineer + Entrepreneur & MIT Alumni
+                </p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Brief description of advisor background and expertise.
+                MIT Alumni with a Master of Science in Management of Technology. Founder and former CTO of Relativity6, built mission-critical AI Workflows with 99.5% SLA compliance for Fortune 500 Companies.
                 </p>
               </div>
 
