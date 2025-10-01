@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
-              The most exclusive Venture Studio in LATAM. Where the brightest minds come to build the future.
+              Where the brightest minds in LATAM come to build the future.
             </p>
             <div className="text-sm text-gray-500 dark:text-gray-500">
               <p>Contact: hello@tensor.com</p>

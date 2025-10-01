@@ -106,7 +106,7 @@ export default function About() {
           {/* Advisors Grid */}
           <section className="mt-16">
             <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Our Advisors</h2>
-            <div className="grid md:grid-cols-3 gap-8 justify-center">
+            <div className="grid md:grid-cols-2 gap-8 justify-center">
               
               {/* Advisor 1: Gyalpo Dongo */}
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-colors text-center">
@@ -124,7 +124,7 @@ export default function About() {
                 </Link>
                 <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">AI Entrepreneur & MIT Alumni</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with Master&apos;s degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform.
+                  MIT alumni with Master&apos;s degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform. Part of Prod Cohort 2, Currently a startup founder.
                 </p>
               </div>
 
@@ -153,19 +153,6 @@ export default function About() {
                 </p>
               </div>
 
-              {/* Advisor 3 */}
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-colors text-center">
-                <div className="mb-4">
-                  <div className="w-[120px] h-[120px] bg-gray-200 dark:bg-gray-600 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-gray-400 dark:text-gray-500 text-sm">Photo</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Advisor Name</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Title</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Brief description of advisor background and expertise.
-                </p>
-              </div>
 
             </div>
           </section>
