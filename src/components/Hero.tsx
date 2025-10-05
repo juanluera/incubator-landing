@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Hero() {
     return (
         <section className="hero-section py-20 text-center min-h-screen grid place-items-center transition-colors">

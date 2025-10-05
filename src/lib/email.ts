@@ -98,7 +98,7 @@ export const EMAIL_TEMPLATES = {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 30px;">
           <h1 style="color: #2563eb; margin: 0;">Tensor</h1>
-          <p style="color: #6b7280; margin: 5px 0;">The most exclusive Venture Studio in LATAM</p>
+          <p style="color: #6b7280; margin: 5px 0;">Where the brightest minds in LATAM come to build the future.</p>
         </div>
         
         <h2 style="color: #1f2937;">Thank you for your interest!</h2>
@@ -159,7 +159,7 @@ export const EMAIL_TEMPLATES = {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 30px;">
           <h1 style="color: #2563eb; margin: 0;">Tensor</h1>
-          <p style="color: #6b7280; margin: 5px 0;">The most exclusive Venture Studio in LATAM</p>
+          <p style="color: #6b7280; margin: 5px 0;">Where the brightest minds in LATAM come to build the future.</p>
         </div>
         
         <h2 style="color: #1f2937;">Welcome to our Mentorship Network!</h2>
