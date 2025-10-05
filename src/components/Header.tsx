@@ -39,13 +39,21 @@ export default function Header() {
             ))}
             </div>
             
-            {/* Desktop CTA Button */}
-            <Link
-              href="/waitlist" 
-              className="hidden md:inline-block bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
-            >
-              Join the Waitlist
-            </Link>
+            {/* Desktop CTA Buttons */}
+            <div className="hidden md:flex space-x-4">
+              <Link
+                href="/network" 
+                className="bg-gray-600 dark:bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors"
+              >
+                Network
+              </Link>
+              <Link
+                href="/waitlist" 
+                className="bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
+              >
+                Program Waitlist
+              </Link>
+            </div>
 
             {/* Mobile Hamburger Button */}
             <button
@@ -73,13 +81,22 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  href="/waitlist"
-                  className="block mt-4 bg-blue-600 dark:bg-blue-700 text-white px-3 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Join the Waitlist
-                </Link>
+                <div className="mt-4 space-y-2">
+                  <Link
+                    href="/network"
+                    className="block bg-gray-600 dark:bg-gray-700 text-white px-3 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors text-center"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Network
+                  </Link>
+                  <Link
+                    href="/waitlist"
+                    className="block bg-blue-600 dark:bg-blue-700 text-white px-3 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors text-center"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Program Waitlist
+                  </Link>
+                </div>
               </div>
             </div>
           )}

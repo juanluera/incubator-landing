@@ -2,22 +2,30 @@ import { supabase } from '@/lib/supabase'
 import { sendConfirmationEmail } from '@/lib/email'
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function POST(request: NextRequest){
-    try{
+export async function POST(request: NextRequest) {
+    try {
+        console.log('=== Network API Route Called ===');
+        
         const formData = await request.formData();
+        console.log('FormData received');
 
         const name = formData.get('name') as string;
         const email = formData.get('email') as string;
-        const school = formData.get('school') as string;
-        const description = formData.get('description') as string;
-        const status = formData.get('status') as string;
+        const company = formData.get('company') as string;
+        const position = formData.get('position') as string;
+        const experience = formData.get('experience') as string;
+        const industry = formData.get('industry') as string;
+        const mentorship_areas = formData.get('mentorship_areas') as string;
+        const motivation = formData.get('motivation') as string;
         const cvFile = formData.get('cv') as File;
 
+        console.log('Form data parsed:', { name, email, company, position, experience, industry });
+        console.log('CV file:', cvFile ? `${cvFile.name} (${cvFile.size} bytes)` : 'No file');
 
         let cvUrl = null;
         let cvFilename = null;
 
-        if (cvFile && cvFile.size > 0){
+        if (cvFile && cvFile.size > 0) {
             // Create readable date-based ID: YYYYMMDD_HHMMSS
             const now = new Date();
             const dateStr = now.getFullYear().toString() + 
@@ -36,13 +44,13 @@ export async function POST(request: NextRequest){
                 .replace(/_+/g, '_')        // Replace multiple underscores with single
                 .replace(/^_|_$/g, '');     // Remove leading/trailing underscores
             
-            const fileName = `waitlist/${applicationId}/${sanitizedName}_cv.${fileExt}`;
+            const fileName = `network/${applicationId}/${sanitizedName}_resume.${fileExt}`;
 
-            const {data: fileData, error: fileError} = await supabase.storage
+            const { data: fileData, error: fileError } = await supabase.storage
                 .from('cvs')
                 .upload(fileName, cvFile);
 
-            if (fileError){
+            if (fileError) {
                 console.error("Error uploading CV file", fileError);
                 throw new Error("Failed to upload CV file");
             }
@@ -51,24 +59,29 @@ export async function POST(request: NextRequest){
             cvFilename = cvFile.name;
         }
 
-        const {data, error} = await supabase
-            .from('applications')
+        const { data, error } = await supabase
+            .from('network_applications')
             .insert([{
                 name,
                 email,
-                school,
-                description,
-                status,
+                company,
+                position,
+                experience,
+                industry,
+                mentorship_areas,
+                motivation,
                 cv_url: cvUrl,
                 cv_filename: cvFilename
             }])
+
         if (error) {
-            console.error("Error submitting application", error);
+            console.error("Error submitting network application", error);
             throw error
         }
 
         // Send confirmation email
-        const emailResult = await sendConfirmationEmail(email, name, 'waitlist');
+        console.log('Sending confirmation email to:', email);
+        const emailResult = await sendConfirmationEmail(email, name, 'network');
         
         if (!emailResult.success) {
             console.error('Failed to send confirmation email:', 'error' in emailResult ? emailResult.error : 'Unknown error');
@@ -77,14 +90,14 @@ export async function POST(request: NextRequest){
             console.log('Confirmation email sent successfully');
         }
 
-        return NextResponse.json({
-            success: true,
+        return NextResponse.json({ 
+            success: true, 
             data,
-            emailSent: emailResult.success
+            emailSent: emailResult.success 
         })
 
-    } catch (error){
-        console.error('API Error:', error);
-        return NextResponse.json({success:false,error:'Internal Server Error'}, {status:500});
+    } catch (error) {
+        console.error('Network API Error:', error);
+        return NextResponse.json({ success: false, error: 'Internal Server Error' }, { status: 500 });
     }
 }

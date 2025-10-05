@@ -1,0 +1,135 @@
+import { FormConfig } from '@/types/form';
+
+export const WAITLIST_FORM_CONFIG: FormConfig = {
+  title: 'Join the Waitlist',
+  successTitle: 'Interest Form Submitted!',
+  successMessage: 'Thank you for your interest. We will be in touch soon.',
+  submitButtonText: 'Submit Application',
+  apiEndpoint: '/api/submit-application',
+  fields: [
+    {
+      key: 'name',
+      label: 'Full Name',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'email',
+      label: 'Email',
+      type: 'email',
+      required: true,
+    },
+    {
+      key: 'school',
+      label: 'School/University',
+      type: 'text',
+      required: true,
+      placeholder: 'e.g., MIT, Stanford, Universidad de Chile',
+    },
+    {
+      key: 'description',
+      label: 'Biggest Accomplishment',
+      type: 'textarea',
+      placeholder: 'Describe your most significant achievement (academic, professional, personal project, etc.)',
+      rows: 4,
+    },
+    {
+      key: 'status',
+      label: 'Current Status',
+      type: 'select',
+      required: true,
+      placeholder: 'Select your status',
+      options: [
+        { value: 'student', label: 'Student' },
+        { value: 'recent-grad', label: 'Recent Graduate' },
+        { value: 'professional', label: 'Professional' },
+      ],
+    },
+    {
+      key: 'cv',
+      label: 'CV/Resume',
+      type: 'file',
+      required: true,
+      accept: '.pdf,.doc,.docx',
+      maxSize: 2,
+    },
+  ],
+};
+
+export const NETWORK_FORM_CONFIG: FormConfig = {
+  title: 'Join Our Network',
+  successTitle: 'Network Application Submitted!',
+  successMessage: 'Thank you for your interest in joining our mentor network. We will review your application and be in touch soon.',
+  submitButtonText: 'Submit Network Application',
+  apiEndpoint: '/api/submit-network',
+  fields: [
+    {
+      key: 'name',
+      label: 'Full Name',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'email',
+      label: 'Email',
+      type: 'email',
+      required: true,
+    },
+    {
+      key: 'company',
+      label: 'Current Company',
+      type: 'text',
+      required: true,
+      placeholder: 'e.g., Google, Microsoft, Startup Name',
+    },
+    {
+      key: 'position',
+      label: 'Current Position',
+      type: 'text',
+      required: true,
+      placeholder: 'e.g., Senior Software Engineer, Product Manager, CEO',
+    },
+    {
+      key: 'experience',
+      label: 'Years of Experience',
+      type: 'select',
+      required: true,
+      placeholder: 'Select experience level',
+      options: [
+        { value: '1-3', label: '1-3 years' },
+        { value: '4-7', label: '4-7 years' },
+        { value: '8-12', label: '8-12 years' },
+        { value: '13+', label: '13+ years' },
+      ],
+    },
+    {
+      key: 'industry',
+      label: 'Industry/Expertise',
+      type: 'text',
+      required: true,
+      placeholder: 'e.g., AI/ML, Fintech, Healthcare, E-commerce',
+    },
+    {
+      key: 'mentorship_areas',
+      label: 'Areas You Can Mentor In',
+      type: 'textarea',
+      placeholder: 'Describe the areas where you can provide guidance (e.g., technical development, product strategy, fundraising, scaling teams)',
+      rows: 4,
+    },
+    {
+      key: 'motivation',
+      label: 'Why do you want to join our network?',
+      type: 'textarea',
+      placeholder: 'Tell us about your motivation to mentor and support emerging founders',
+      rows: 4,
+    },
+    {
+      key: 'cv',
+      label: 'CV/Resume',
+      type: 'file',
+      required: true,
+      accept: '.pdf,.doc,.docx',
+      maxSize: 2,
+    },
+  ],
+};
