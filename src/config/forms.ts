@@ -4,7 +4,7 @@ export const WAITLIST_FORM_CONFIG: FormConfig = {
   title: 'Join the Waitlist',
   successTitle: 'Interest Form Submitted!',
   successMessage: 'Thank you for your interest. We will be in touch soon.',
-  submitButtonText: 'Submit Application',
+  submitButtonText: 'Submit',
   apiEndpoint: '/api/submit-application',
   fields: [
     {
@@ -58,9 +58,9 @@ export const WAITLIST_FORM_CONFIG: FormConfig = {
 
 export const NETWORK_FORM_CONFIG: FormConfig = {
   title: 'Join Our Network',
-  successTitle: 'Network Application Submitted!',
-  successMessage: 'Thank you for your interest in joining our mentor network. We will review your application and be in touch soon.',
-  submitButtonText: 'Submit Network Application',
+  successTitle: 'Network Interest Form Submitted!',
+  successMessage: 'Thank you for your interest in joining our mentor network. We will be in touch soon.',
+  submitButtonText: 'Submit',
   apiEndpoint: '/api/submit-network',
   fields: [
     {

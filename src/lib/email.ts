@@ -154,7 +154,7 @@ export const EMAIL_TEMPLATES = {
   },
 
   NETWORK_CONFIRMATION: {
-    subject: 'Thank you for joining the Tensor Network!',
+    subject: 'Welcome to the Tensor Mentorship Network!',
     getHtml: (name: string) => `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 30px;">
@@ -162,23 +162,24 @@ export const EMAIL_TEMPLATES = {
           <p style="color: #6b7280; margin: 5px 0;">The most exclusive Venture Studio in LATAM</p>
         </div>
         
-        <h2 style="color: #1f2937;">Welcome to the Tensor Mentor Network!</h2>
+        <h2 style="color: #1f2937;">Welcome to our Mentorship Network!</h2>
         
         <p>Hi ${name},</p>
         
-        <p>Thank you for your interest in joining our mentor network. We've successfully received your application and are excited about the expertise you can bring to our community.</p>
+        <p>Thank you for you interest in joining our mentorship network! We're thrilled to have experienced professionals like you as part of our community.</p>
         
         <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #1f2937; margin-top: 0;">What happens next?</h3>
+          <h3 style="color: #1f2937; margin-top: 0;">What to expect:</h3>
           <ul style="color: #4b5563; line-height: 1.6;">
-            <li>Our team will review your application and expertise areas</li>
-            <li>We'll reach out within 3-5 business days to discuss next steps</li>
-            <li>If accepted, you'll be connected with founders who match your expertise</li>
-            <li>You'll receive invitations to exclusive network events and workshops</li>
+            <li>You'll be the first to know about mentorship opportunities with promising founders</li>
+            <li>Receive invitations to exclusive network events and workshops</li>
+            <li>Get early access to our programs and startup showcases</li>
           </ul>
         </div>
         
-        <p>We believe in the power of experienced professionals like you to guide and support the next generation of entrepreneurs in LATAM.</p>
+        <p>We're building a powerful network of mentors and advisors to support the next generation of foundersin LATAM, and we're excited to have you be part of this journey.</p>
+        
+        <p>Stay tuned for exciting opportunities to make an impact!</p>
         
         <p>Best regards,<br>
         <strong>The Tensor Team</strong></p>
@@ -192,15 +193,17 @@ export const EMAIL_TEMPLATES = {
     getText: (name: string) => `
       Hi ${name},
 
-      Thank you for your interest in joining our mentor network. We've successfully received your application and are excited about the expertise you can bring to our community.
+      Thank you for joining our mentorship network! We're thrilled to have experienced professionals like you as part of our community.
 
-      What happens next?
-      - Our team will review your application and expertise areas
-      - We'll reach out within 3-5 business days to discuss next steps
-      - If accepted, you'll be connected with founders who match your expertise
-      - You'll receive invitations to exclusive network events and workshops
+      What to expect:
+      - You'll be the first to know about mentorship opportunities with promising founders
+      - Receive invitations to exclusive network events and workshops
+      - Connect with other industry leaders and experienced professionals
+      - Get early access to our programs and startup showcases
 
-      We believe in the power of experienced professionals like you to guide and support the next generation of entrepreneurs in LATAM.
+      We're building a powerful network of mentors and advisors to support the next generation of entrepreneurs in LATAM, and we're excited to have you be part of this journey.
+
+      Stay tuned for exciting opportunities to make an impact!
 
       Best regards,
       The Tensor Team

@@ -4,6 +4,12 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest){
     try{
+        // Debug environment variables in production
+        console.log('🔍 Environment check in production:');
+        console.log('- ZOHO_ACCESS_TOKEN:', process.env.ZOHO_ACCESS_TOKEN ? 'SET' : 'MISSING');
+        console.log('- ZOHO_ACCOUNT_ID:', process.env.ZOHO_ACCOUNT_ID ? 'SET' : 'MISSING');
+        console.log('- ZOHO_FROM_EMAIL:', process.env.ZOHO_FROM_EMAIL ? 'SET' : 'MISSING');
+        
         const formData = await request.formData();
 
         const name = formData.get('name') as string;
