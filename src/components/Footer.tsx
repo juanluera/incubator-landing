@@ -8,7 +8,7 @@ export default function Footer() {
   const translations = useTranslations('footer');
 
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors">
+    <footer className="bg-gradient-to-b from-slate-50 via-blue-50 to-amber-50 dark:from-gray-900 dark:to-gray-800 border-t border-slate-200 dark:border-gray-700 transition-colors">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           

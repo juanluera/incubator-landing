@@ -46,13 +46,13 @@ export default function Header() {
             <div className="hidden md:flex space-x-4">
               <Link
                 href="/network" 
-                className="bg-gray-600 dark:bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors"
+                className="bg-gradient-to-r from-slate-700 to-blue-700 dark:from-slate-800 dark:to-blue-800 text-white px-6 py-2 rounded-lg hover:from-slate-800 hover:to-blue-800 dark:hover:from-slate-900 dark:hover:to-blue-900 transition-all shadow-md hover:shadow-lg"
               >
                 {translations('network')}
               </Link>
               <Link
                 href="/waitlist" 
-                className="bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
+                className="bg-gradient-to-r from-blue-600 to-amber-600 dark:from-blue-700 dark:to-amber-700 text-white px-6 py-2 rounded-lg hover:from-blue-700 hover:to-amber-700 dark:hover:from-blue-800 dark:hover:to-amber-800 transition-all shadow-md hover:shadow-lg"
               >
                 {translations('programWaitlist')}
               </Link>
