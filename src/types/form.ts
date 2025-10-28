@@ -1,7 +1,7 @@
 // Form field types
 export interface FormField {
   key: string;
-  label: string;
+  label?: string; // Optional since we get labels from translations
   type: 'text' | 'email' | 'textarea' | 'select' | 'file';
   required?: boolean;
   placeholder?: string;
