@@ -12,10 +12,7 @@ export interface FormField {
 }
 
 export interface FormConfig {
-  title: string;
-  successTitle: string;
-  successMessage: string;
-  submitButtonText: string;
+  formType: 'waitlist' | 'network';
   apiEndpoint: string;
   fields: FormField[];
 }

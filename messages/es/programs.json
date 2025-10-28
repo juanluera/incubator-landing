@@ -1,0 +1,48 @@
+{
+  "programs": {
+    "title": "El Programa Tensor",
+    "description": "Un programa acelerador sin fines de lucro competitivo diseñado para identificar y apoyar a los fundadores más prometedores en LATAM. Creemos en la selección basada en el mérito y en empoderar al talento excepcional.",
+    "stage1Title": "Aplicación y Fuentes de Red",
+    "stage1Description": "Recopilamos aplicaciones de estudiantes talentosos y profesionales en LATAM a través de nuestra red establecida de ex alumnos de MIT.",
+    "stage1Items": [
+      "Presenta tu idea de startup con justificación de mercado",
+      "Demuestra el potencial de ajuste producto-mercado",
+      "Referencias basadas en la red priorizadas",
+      "Aplicaciones continuas aceptadas"
+    ],
+    "stage2Title": "Sprint Intensivo de 2 Semanas",
+    "stage2Description": "Los equipos seleccionados obtienen dos semanas para hacer el máximo progreso construyendo su empresa. Aquí es donde la ejecución se encuentra con la ambición.",
+    "stage2Items": [
+      "Construir MVP o prototipo significativo",
+      "Validar supuestos de mercado",
+      "Ambiente competitivo fomenta la excelencia",
+      "Los 100 mejores desempeñadores avanzan"
+    ],
+    "stage3Title": "Proceso de Entrevista Elite",
+    "stage3Description": "Los 100 mejores equipos son entrevistados y evaluados por compromiso, escalabilidad y potencial de impacto.",
+    "stage3Items": [
+      "Entrevistas profundas con fundadores",
+      "Validación del modelo de negocio",
+      "Evaluación de impacto y sostenibilidad",
+      "25 equipos finales seleccionados"
+    ],
+    "stage4Title": "Apoyo y Recursos",
+    "stage4Description": "Los 25 mejores fundadores reciben apoyo integral y acceso a nuestro ecosistema de startups, incluyendo participación en una convención intensiva de un mes.",
+    "supportStructureTitle": "Estructura de Apoyo",
+    "supportStructureItems": [
+      "Mentoría y orientación",
+      "Apoyo asesor estratégico",
+      "Conexiones con inversores potenciales",
+      "Apoyo a hitos basado en el desempeño"
+    ],
+    "tensorResourcesTitle": "Recursos Tensor",
+    "tensorResourcesItems": [
+      "Convención intensiva de un mes",
+      "Orientación legal y de cumplimiento",
+      "Conexiones de mercado y asociaciones",
+      "Oportunidades de presentación a inversores"
+    ],
+    "missionPhilosophyTitle": "Nuestra Filosofía de Misión",
+    "missionPhilosophyText": "Creemos en empoderar a fundadores excepcionales para construir empresas transformadoras. Nuestra misión es simple: brindar máximo valor y apoyo a emprendedores visionarios. Conectamos fundadores con recursos, mentores e inversores potenciales, creando un ecosistema próspero para la innovación."
+  }
+}

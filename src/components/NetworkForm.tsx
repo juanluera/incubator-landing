@@ -1,6 +1,6 @@
 import ApplicationForm from './ApplicationForm';
-import { NETWORK_FORM_CONFIG } from '@/config/forms';
+import { NETWORK_CONFIG } from '@/config/forms';
 
 export default function NetworkForm() {
-  return <ApplicationForm config={NETWORK_FORM_CONFIG} />;
+  return <ApplicationForm config={NETWORK_CONFIG} />;
 }

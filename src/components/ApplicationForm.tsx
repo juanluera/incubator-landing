@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { FormConfig, CustomFormData } from '@/types/form';
 
 interface ApplicationFormProps {
@@ -8,6 +9,7 @@ interface ApplicationFormProps {
 }
 
 export default function ApplicationForm({ config }: ApplicationFormProps) {
+  const t = useTranslations(`forms.${config.formType}`);
   const [cvFile, setCvFile] = useState<File | null>(null);
   const [formData, setFormData] = useState<CustomFormData>(() => {
     const initialData: CustomFormData = {};
@@ -99,10 +101,10 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
     return (
       <div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md text-center transition-colors">
         <h2 className="text-2xl font-bold mb-4 text-green-600 dark:text-green-400">
-          {config.successTitle}
+          {t('successTitle')}
         </h2>
         <p className="text-gray-600 dark:text-gray-300">
-          {config.successMessage}
+          {t('successMessage')}
         </p>
       </div>
     );
@@ -111,13 +113,13 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-colors">
       <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-        {config.title}
+        {t('title')}
       </h2>
       
       {config.fields.map((field) => (
         <div key={field.key} className="mb-4">
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            {field.label} {field.required && '*'}
+            {t(`fields.${field.key}.label`)} {field.required && '*'}
           </label>
           
           {field.type === 'text' || field.type === 'email' ? (
@@ -126,7 +128,7 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
               value={formData[field.key] || ''}
               onChange={(e) => handleInputChange(field.key, e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-              placeholder={field.placeholder}
+              placeholder={t(`fields.${field.key}.placeholder`)}
               required={field.required}
             />
           ) : field.type === 'textarea' ? (
@@ -135,7 +137,7 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
               onChange={(e) => handleInputChange(field.key, e.target.value)}
               rows={field.rows || 4}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-              placeholder={field.placeholder}
+              placeholder={t(`fields.${field.key}.placeholder`)}
               required={field.required}
             />
           ) : field.type === 'select' ? (
@@ -145,12 +147,17 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
               required={field.required}
             >
-              <option value="">{field.placeholder || `Select ${field.label}`}</option>
-              {field.options?.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
+              <option value="">{t(`fields.${field.key}.placeholder`)}</option>
+              {field.key === 'status' && (['student', 'recent-grad', 'professional'].map((val) => (
+                <option key={val} value={val}>
+                  {t(`statusOptions.${val}`)}
                 </option>
-              ))}
+              )))}
+              {field.key === 'experience' && (['1-3', '4-7', '8-12', '13+'].map((val) => (
+                <option key={val} value={val}>
+                  {t(`experienceOptions.${val}`)}
+                </option>
+              )))}
             </select>
           ) : field.type === 'file' ? (
             <div>
@@ -181,7 +188,7 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
         disabled={isSubmitting}
         className="w-full bg-blue-600 dark:bg-blue-700 text-white py-3 px-4 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 font-medium disabled:opacity-50 transition-colors"
       >
-        {isSubmitting ? 'Submitting...' : config.submitButtonText}
+        {isSubmitting ? 'Submitting...' : t('submitButton')}
       </button>
     </form>
   );

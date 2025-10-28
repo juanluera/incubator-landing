@@ -2,15 +2,15 @@
 export const SITE_CONFIG = {
     name: "Tensor",
     description: "Tensor Venture Studio for the brightest minds in LATAM",
-    url: "https://tcm.co",
-    email: "hello@Tensor.com",
+    url: "https://tensor.pw",
+    email: "hello@pensor.pw",
     phone: "+1 (555) 123-4567"
   };
   
   export const NAVIGATION_LINKS = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/programs", label: "Programs" },
+    { href: "/", label: "home" },
+    { href: "/about", label: "about" },
+    { href: "/programs", label: "programs" },
   ];
   
   export const PROGRAMS = [

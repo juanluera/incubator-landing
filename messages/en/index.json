@@ -1,0 +1,72 @@
+{
+    
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "programs": "Programs",
+        "contact": "Contact",
+        "network": "Join Our Network",
+        "programWaitlist": "Program Waitlist"
+    },
+    "hero": {
+        "title": "Tensor",
+        "description": "Where the brightest minds in LATAM come to build the future.",
+        "cta": "Join the waitlist"
+    },
+    "footer": {
+        "description": "Where the brightest minds in LATAM come to build the future.",
+        "quickLinks": "Quick Links",
+        "connect": "Connect",
+        "copyright": "Tensor. All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "contact": "Contact",
+        "aboutUs": "About Us",
+        "programs": "Programs",
+        "joinWaitlist": "Join the Waitlist"
+    },
+    "forms": {
+        "waitlist": {
+            "title": "Join the Waitlist",
+            "successTitle": "Interest Form Submitted!",
+            "successMessage": "Thank you for your interest. We will be in touch soon.",
+            "submitButton": "Submit",
+            "fields": {
+                "name": { "label": "Full Name", "placeholder": "Enter your full name" },
+                "email": { "label": "Email", "placeholder": "Enter your email" },
+                "school": { "label": "School/University", "placeholder": "e.g., MIT, Stanford, Universidad de Chile" },
+                "description": { "label": "Biggest Accomplishment", "placeholder": "Describe your most significant achievement (academic, professional, personal project, etc.)" },
+                "status": { "label": "Current Status", "placeholder": "Select your status" },
+                "cv": { "label": "CV/Resume", "placeholder": "Upload your CV/Resume" }
+            },
+            "statusOptions": {
+                "student": "Student",
+                "recent-grad": "Recent Graduate",
+                "professional": "Professional"
+            }
+        },
+        "network": {
+            "title": "Join Our Network",
+            "successTitle": "Network Interest Form Submitted!",
+            "successMessage": "Thank you for your interest in joining our mentor network. We will be in touch soon.",
+            "submitButton": "Submit",
+            "fields": {
+                "name": { "label": "Full Name", "placeholder": "Enter your full name" },
+                "email": { "label": "Email", "placeholder": "Enter your email" },
+                "company": { "label": "Current Company", "placeholder": "e.g., Google, Microsoft, Startup Name" },
+                "position": { "label": "Current Position", "placeholder": "e.g., Senior Software Engineer, Product Manager, CEO" },
+                "experience": { "label": "Years of Experience", "placeholder": "Select experience level" },
+                "industry": { "label": "Industry/Expertise", "placeholder": "e.g., AI/ML, Fintech, Healthcare, E-commerce" },
+                "mentorship_areas": { "label": "Areas You Can Mentor In", "placeholder": "Describe the areas where you can provide guidance (e.g., technical development, product strategy, fundraising, scaling teams)" },
+                "motivation": { "label": "Why do you want to join our network?", "placeholder": "Tell us about your motivation to mentor and support emerging founders" },
+                "cv": { "label": "CV/Resume", "placeholder": "Upload your CV/Resume" }
+            },
+            "experienceOptions": {
+                "1-3": "1-3 years",
+                "4-7": "4-7 years",
+                "8-12": "8-12 years",
+                "13+": "13+ years"
+            }
+        }
+    }
+}

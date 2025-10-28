@@ -1,0 +1,20 @@
+{
+    "about": {
+        "title": "Conoce a Nuestro Equipo",
+        "ourMission": "Nuestra Misión",
+        "missionDescription": "Conectamos a fundadores talentosos con los recursos que necesitan para construir startups exitosas.",
+        "leadershipTeam": "Equipo de Liderazgo",
+        "coFounder": "Co-Fundador",
+        "angelBio": "Ex alumno de MIT con doble especialización en Física y EECS. Ex ingeniero de Amazon y co-fundador de startup con amplia experiencia técnica en ingeniería y desarrollo de productos.",
+        "sebastianBio": "Ex alumno de MIT con doble especialización en CS y Física, actualmente cursando Maestría en CS. Ingeniero de NVIDIA con experiencia en IA y computación de alto rendimiento.",
+        "antonioBio": "Ex alumno de MIT con doble especialización en Física y EECS. Ingeniero de Software de Microsoft con experiencia en startups y experiencia en desarrollo de software e ingeniería.",
+        "cruzBio": "Ex alumno de MIT con doble especialización en Aero/Astro y Física. Ex ingeniero de SpaceX y actual candidato a PhD en Aeronáutica y Astronáutica en Stanford con experiencia en ingeniería aeroespacial y sistemas de propulsión avanzados.",
+        "advisors": "Nuestros Asesores",
+        "gyalpoTitle": "Emprendedor de IA y Ex Alumno de MIT",
+        "gyalpoBio": "Ex alumno de MIT con Maestría en Ciencias de la Computación, especializado en IA. Ex fundador de Xplain, una plataforma educativa impulsada por IA. Parte de Prod Cohort 2. Actualmente fundador de startup.",
+        "abrahamTitle": "Ingeniero de IA Desplegado + Emprendedor y Ex Alumno de MIT",
+        "abrahamBio": "Ex alumno de MIT con Maestría en Gestión de Tecnología. Fundador y ex CTO de Relativity6, construyó flujos de trabajo de IA críticos con 99.5% de cumplimiento SLA para empresas Fortune 500.",
+        "ourStory": "Nuestra Historia",
+        "ourStoryDescription": "Somos un grupo de ex alumnos de MIT apasionados por construir startups exitosas y hacer que la innovación ocurra en LATAM. Estamos dedicados a ayudar a fundadores a construir su nicho y lograr sus objetivos."
+    }
+}

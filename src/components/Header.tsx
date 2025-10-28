@@ -1,8 +1,10 @@
 'use client';
 
-import Link from 'next/link';
+import {Link} from '@/i18n/routing';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+
 
 import { SITE_CONFIG } from '@/lib/constants';
 import { NAVIGATION_LINKS } from '@/lib/constants';
@@ -10,6 +12,7 @@ import { NAVIGATION_LINKS } from '@/lib/constants';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const translations = useTranslations('header');
 
     return (
       <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors">
@@ -34,7 +37,7 @@ export default function Header() {
                 href={link.href} 
                 className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
-                {link.label}
+                {translations(link.label)}
                 </Link>
             ))}
             </div>
@@ -45,13 +48,13 @@ export default function Header() {
                 href="/network" 
                 className="bg-gray-600 dark:bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors"
               >
-                Network
+                {translations('network')}
               </Link>
               <Link
                 href="/waitlist" 
                 className="bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
               >
-                Program Waitlist
+                {translations('programWaitlist')}
               </Link>
             </div>
 

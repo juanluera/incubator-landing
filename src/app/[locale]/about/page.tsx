@@ -1,23 +1,25 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function About() {
+  const translations = useTranslations('about');
     return (
       <div className="min-h-screen p-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">Meet Our Team</h1>
+          <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">{translations('title')}</h1>
           
           {/* Mission Section */}
           <section className="mb-12 text-center">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Our Mission</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">{translations('ourMission')}</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We connect talented founders with the resources they need to build successful startups.
+              {translations('missionDescription')}
             </p>
           </section>
 
           {/* Team Grid */}
           <section>
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Leadership Team</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">{translations('leadershipTeam')}</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               
               {/* Team Member 1 */}
@@ -34,9 +36,9 @@ export default function About() {
                 <Link href="https://juanluera.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Juan Angel Luera</h3>
                 </Link>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Co-Founder</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{translations('coFounder')}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with double major in Physics and EECS. Former Amazon engineer and startup co-founder with deep technical expertise in engineering and product development.
+                  {translations('angelBio')}
                 </p>
               </div>
 
@@ -54,9 +56,9 @@ export default function About() {
                 <Link href="https://www.linkedin.com/in/salberdi/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Sebastian Alberdi</h3>
                 </Link>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Co-Founder</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{translations('coFounder')}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with double major in CS and Physics, currently pursuing Masters in CS. NVIDIA engineer with expertise in AI and high-performance computing.
+                  {translations('sebastianBio')}
                 </p>
               </div>
 
@@ -74,9 +76,9 @@ export default function About() {
                 <Link href="https://www.linkedin.com/in/antoniol19/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Juan Antonio Luera</h3>
                 </Link>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Co-Founder</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{translations('coFounder')}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with double major in Physics and EECS. Microsoft Software Engineer with startup experience and expertise in software development and engineering.
+                  {translations('antonioBio')}
                 </p>
               </div>
 
@@ -94,9 +96,9 @@ export default function About() {
                 <Link href="https://www.linkedin.com/in/cruz-soto/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Cruz Soto</h3>
                 </Link>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Co-Founder</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{translations('coFounder')}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with double major in Aero/Astro and Physics. Former SpaceX engineer and current PhD candidate in Aeronautics and Astronautics at Stanford with expertise in aerospace engineering and advanced propulsion systems.
+                  {translations('cruzBio')}
                 </p>
               </div>
 
@@ -105,7 +107,7 @@ export default function About() {
 
           {/* Advisors Grid */}
           <section className="mt-16">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Our Advisors</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">{translations('advisors')}</h2>
             <div className="grid md:grid-cols-2 gap-8 justify-center">
               
               {/* Advisor 1: Gyalpo Dongo */}
@@ -122,9 +124,9 @@ export default function About() {
                 <Link href="https://www.linkedin.com/in/gyalpodongo/" target="_blank" rel="noopener noreferrer">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Gyalpo Dongo</h3>
                 </Link>
-                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">AI Entrepreneur & MIT Alumni</p>
+                <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{translations('gyalpoTitle')}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  MIT alumni with Master&apos;s degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform. Part of Prod Cohort 2, Currently a startup founder.
+                  {translations('gyalpoBio')}
                 </p>
               </div>
 
@@ -146,10 +148,10 @@ export default function About() {
                   <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Abraham Cristiani</h3>
                 </Link>                
                 <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
-                  AI Forward Deployed Engineer + Entrepreneur & MIT Alumni
+                  {translations('abrahamTitle')}
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                MIT Alumni with a Master of Science in Management of Technology. Founder and former CTO of Relativity6, built mission-critical AI Workflows with 99.5% SLA compliance for Fortune 500 Companies.
+                {translations('abrahamBio')}
                 </p>
               </div>
 
@@ -159,9 +161,9 @@ export default function About() {
 
           {/* Company Story */}
           <section className="mt-16 text-center">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Our Story</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">{translations('ourStory')}</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We are a group of MIT alumni who are passionate about building successful startups and making innovation happen in LATAM. We are dedicated to helping founders build their niche and achieve their goals.
+              {translations('ourStoryDescription')}
             </p>
           </section>
         </div>
