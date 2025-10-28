@@ -1,7 +1,7 @@
-import { FormConfig } from '@/types/form';
+import { FormConfig, FormField } from '@/types/form';
 
 // Field structure only - no labels/placeholders
-export const WAITLIST_FIELDS = [
+export const WAITLIST_FIELDS: FormField[] = [
   { key: 'name', type: 'text', required: true },
   { key: 'email', type: 'email', required: true },
   { key: 'school', type: 'text', required: true },
@@ -10,7 +10,7 @@ export const WAITLIST_FIELDS = [
   { key: 'cv', type: 'file', required: true, accept: '.pdf,.doc,.docx', maxSize: 2 },
 ];
 
-export const NETWORK_FIELDS = [
+export const NETWORK_FIELDS: FormField[] = [
   { key: 'name', type: 'text', required: true },
   { key: 'email', type: 'email', required: true },
   { key: 'company', type: 'text', required: true },
@@ -23,14 +23,14 @@ export const NETWORK_FIELDS = [
 ];
 
 // Simple configs
-export const WAITLIST_CONFIG = {
+export const WAITLIST_CONFIG: FormConfig = {
   formType: 'waitlist',
   apiEndpoint: '/api/submit-application',
   fields: WAITLIST_FIELDS,
-} as const;
+};
 
-export const NETWORK_CONFIG = {
+export const NETWORK_CONFIG: FormConfig = {
   formType: 'network',
   apiEndpoint: '/api/submit-network',
   fields: NETWORK_FIELDS,
-} as const;
+};
