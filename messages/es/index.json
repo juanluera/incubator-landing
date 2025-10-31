@@ -57,7 +57,7 @@
                 "industry": { "label": "Industria/Experiencia", "placeholder": "ej., IA/ML, Fintech, Salud, Comercio Electrónico" },
                 "mentorship_areas": { "label": "Áreas en las que Puedes Mentorar", "placeholder": "Describe las áreas en las que puedes brindar orientación (ej., desarrollo técnico, estrategia de producto, recaudación de fondos, escalamiento de equipos)" },
                 "motivation": { "label": "¿Por qué quieres unirte a nuestra red?", "placeholder": "Cuéntanos sobre tu motivación para mentorar y apoyar a fundadores emergentes" },
-                "cv": { "label": "CV/Resumen", "placeholder": "Sube tu CV/Resumen" }
+                "cv": { "label": "CV/Resumen (Opcional)", "placeholder": "Sube tu CV/Resumen (opcional)" }
             },
             "experienceOptions": {
                 "1-3": "1-3 años",

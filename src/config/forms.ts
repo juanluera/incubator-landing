@@ -19,7 +19,7 @@ export const NETWORK_FIELDS: FormField[] = [
   { key: 'industry', type: 'text', required: true },
   { key: 'mentorship_areas', type: 'textarea', rows: 4 },
   { key: 'motivation', type: 'textarea', rows: 4 },
-  { key: 'cv', type: 'file', required: true, accept: '.pdf,.doc,.docx', maxSize: 2 },
+  { key: 'cv', type: 'file', required: false, accept: '.pdf,.doc,.docx', maxSize: 2 },
 ];
 
 // Simple configs
