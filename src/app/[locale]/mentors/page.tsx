@@ -14,10 +14,10 @@ export default function MentorsPage() {
             <section className="bg-gradient-to-b from-accent-blue/10 to-background py-20">
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto">
-                        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-4xl font-bold text-gray-900 mb-6">
                             {t('title')}
                         </h1>
-                        <p className="text-xl text-gray-700 leading-relaxed">
+                        <p className="text-lg text-gray-700 leading-relaxed">
                             {t('subtitle')}
                         </p>
                     </div>

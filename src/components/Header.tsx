@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 
 
 import { SITE_CONFIG } from '@/config/constants';
-import { NAVIGATION_LINKS } from '@/config/constants';
+
 
 
 export default function Header() {

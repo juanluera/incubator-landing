@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { FormConfig, CustomFormData } from './types/form';
+import { FormConfig, CustomFormData } from '@/types/form';
 
 interface ApplicationFormProps {
   config: FormConfig;
@@ -115,7 +115,7 @@ export default function ApplicationForm({ config }: ApplicationFormProps) {
         </div>
         <div className="mt-8 p-4 rounded-lg border" style={{ backgroundColor: '#e3f2fd', borderColor: '#90caf9' }}>
           <p className="text-sm text-black">
-            💡 We'll review your application and get back to you soon!
+            💡 We&apos;ll review your application and get back to you soon!
           </p>
         </div>
       </div>

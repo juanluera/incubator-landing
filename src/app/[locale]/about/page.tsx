@@ -3,10 +3,26 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
+interface TeamMember {
+  name: string;
+  image: string;
+  role: string;
+  bio: string;
+  link: string;
+}
+
+interface Advisor {
+  name: string;
+  image: string;
+  title: string;
+  bio: string;
+  link: string;
+}
+
 export default function About() {
   const t = useTranslations('about');
-  const team = t.raw('team') as any[];
-  const advisors = t.raw('advisors') as any[];
+  const team = t.raw('team') as TeamMember[];
+  const advisors = t.raw('advisors') as Advisor[];
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">

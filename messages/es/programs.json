@@ -44,6 +44,62 @@
         "Emprendedores enfocados en crear impacto en LATAM",
         "Fundadores que buscan mentoría y orientación estratégica"
       ]
-    }
+    },
+    "stages": [
+      {
+        "number": "01",
+        "title": "Aplicación y Selección",
+        "description": "Identificamos a los fundadores más prometedores a través de un riguroso proceso de selección basado en el mérito.",
+        "items": [
+          "Solicitud en línea",
+          "Entrevista técnica",
+          "Entrevista con fundadores",
+          "Selección final"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Incubación",
+        "description": "Los fundadores seleccionados trabajan estrechamente con mentores para refinar sus ideas y construir su MVP.",
+        "items": [
+          "Sesiones semanales de mentoría",
+          "Talleres de desarrollo de producto",
+          "Investigación de mercado",
+          "Validación de MVP"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Aceleración",
+        "description": "Enfoque en el crecimiento, adquisición de usuarios y preparación para la inversión.",
+        "items": [
+          "Estrategias de Growth Hacking",
+          "Apoyo en ventas y marketing",
+          "Modelado financiero",
+          "Preparación de Pitch Deck"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Lanzamiento y Financiamiento",
+        "description": "Lanza tu startup y conéctate con nuestra red de inversores."
+      }
+    ],
+    "supportStructureTitle": "Estructura de Apoyo",
+    "supportStructureItems": [
+      "Mentor dedicado",
+      "Revisiones semanales",
+      "Soporte técnico",
+      "Asesoría legal"
+    ],
+    "tensorResourcesTitle": "Recursos de Tensor",
+    "tensorResourcesItems": [
+      "Créditos en la nube",
+      "Herramientas para desarrolladores",
+      "Acceso a espacios de co-working",
+      "Red de inversores"
+    ],
+    "missionPhilosophyTitle": "Nuestra Filosofía",
+    "missionPhilosophyText": "Creemos que el talento está distribuido uniformemente, pero las oportunidades no. Tensor existe para cerrar esa brecha proporcionando los recursos, la mentoría y la red que los fundadores excepcionales necesitan para tener éxito."
   }
 }

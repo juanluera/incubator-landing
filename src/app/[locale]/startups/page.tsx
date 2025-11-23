@@ -1,13 +1,26 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
+interface Member {
+  name: string;
+  image: string;
+  bio: string;
+}
+
+interface Startup {
+  name: string;
+  logo: string;
+  pitch: string;
+  background?: string;
+  members?: Member[];
+}
+
 export default function Startups() {
   const t = useTranslations('startups');
-  const startups = t.raw('startupsList') as any[];
-  const [selectedStartup, setSelectedStartup] = useState<any>(null);
+  const startups = t.raw('startupsList') as Startup[];
+  const [selectedStartup, setSelectedStartup] = useState<Startup | null>(null);
 
   return (
     <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -112,7 +125,7 @@ export default function Startups() {
                     {t('teamMembers')}
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {selectedStartup.members.map((member: any, index: number) => (
+                    {selectedStartup.members.map((member: Member, index: number) => (
                       <div key={member.name || index} className="p-4 rounded-lg" style={{ backgroundColor: '#faf7f2' }}>
                         <div className="flex flex-col items-center text-center">
                           <div className="mb-4">

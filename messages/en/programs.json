@@ -44,6 +44,62 @@
         "Entrepreneurs focused on creating impact in LATAM",
         "Founders seeking mentorship and strategic guidance"
       ]
-    }
+    },
+    "stages": [
+      {
+        "number": "01",
+        "title": "Application & Selection",
+        "description": "We identify the most promising founders through a rigorous, merit-based selection process.",
+        "items": [
+          "Online Application",
+          "Technical Interview",
+          "Founder Interview",
+          "Final Selection"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Incubation",
+        "description": "Selected founders work closely with mentors to refine their ideas and build their MVP.",
+        "items": [
+          "Weekly Mentorship Sessions",
+          "Product Development Workshops",
+          "Market Research",
+          "MVP Validation"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Acceleration",
+        "description": "Focus on growth, user acquisition, and preparing for investment.",
+        "items": [
+          "Growth Hacking Strategies",
+          "Sales & Marketing Support",
+          "Financial Modeling",
+          "Pitch Deck Preparation"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Launch & Funding",
+        "description": "Launch your startup and connect with our network of investors."
+      }
+    ],
+    "supportStructureTitle": "Support Structure",
+    "supportStructureItems": [
+      "Dedicated Mentor",
+      "Weekly Check-ins",
+      "Technical Support",
+      "Legal Advisory"
+    ],
+    "tensorResourcesTitle": "Tensor Resources",
+    "tensorResourcesItems": [
+      "Cloud Credits",
+      "Developer Tools",
+      "Co-working Space Access",
+      "Investor Network"
+    ],
+    "missionPhilosophyTitle": "Our Philosophy",
+    "missionPhilosophyText": "We believe that talent is evenly distributed, but opportunity is not. Tensor exists to bridge that gap by providing the resources, mentorship, and network that exceptional founders need to succeed."
   }
 }

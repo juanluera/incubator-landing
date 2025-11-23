@@ -31,19 +31,19 @@ async function refreshZohoToken() {
 }
 
 // Function to send email via Zoho API with auto token refresh
-async function sendZohoEmail(to: string, subject: string, htmlContent: string, textContent: string) {
+async function sendZohoEmail(to: string, subject: string, htmlContent: string) {
   let accessToken = process.env.ZOHO_ACCESS_TOKEN;
 
   try {
     const apiUrl = `${ZOHO_API_BASE}/accounts/${process.env.ZOHO_ACCOUNT_ID}/messages`;
-    
+
     const requestBody = {
       fromAddress: process.env.ZOHO_FROM_EMAIL,
       toAddress: to,
       subject: subject,
       content: htmlContent,
     };
-    
+
     // Try with current token first
     let response = await fetch(apiUrl, {
       method: 'POST',
@@ -59,7 +59,7 @@ async function sendZohoEmail(to: string, subject: string, htmlContent: string, t
     if (response.status === 401) {
       console.log('Access token expired, refreshing...');
       accessToken = await refreshZohoToken();
-      
+
       // Retry with new token
       response = await fetch(apiUrl, {
         method: 'POST',
@@ -221,15 +221,14 @@ export async function sendConfirmationEmail(
   type: 'waitlist' | 'network'
 ) {
   try {
-    const template = type === 'waitlist' 
-      ? EMAIL_TEMPLATES.WAITLIST_CONFIRMATION 
+    const template = type === 'waitlist'
+      ? EMAIL_TEMPLATES.WAITLIST_CONFIRMATION
       : EMAIL_TEMPLATES.NETWORK_CONFIRMATION;
 
     const result = await sendZohoEmail(
       to,
       template.subject,
-      template.getHtml(name),
-      template.getText(name)
+      template.getHtml(name)
     );
 
     console.log('✅ Email sent successfully via Zoho API:', result.messageId);

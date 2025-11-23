@@ -5,6 +5,13 @@ import { useTranslations } from 'next-intl';
 import WaitlistForm from '@/components/WaitlistForm';
 import Modal from '@/components/ui/Modal';
 
+interface Stage {
+  number: string;
+  title: string;
+  description: string;
+  items?: string[];
+}
+
 export default function Waitlist() {
   const t = useTranslations('programs');
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +30,7 @@ export default function Waitlist() {
 
         {/* Program Stages */}
         <div className="space-y-8 mb-16">
-          {t.raw('stages').map((stage: any, index: number) => {
+          {t.raw('stages').map((stage: Stage, index: number) => {
             const colors = ['bg-blue-600', 'bg-orange-600', 'bg-green-600', 'bg-purple-600'];
             const isLastStage = index === 3; // Stage 4 has special layout
 

@@ -5,6 +5,11 @@ import { useTranslations } from 'next-intl';
 import WaitlistForm from '@/components/WaitlistForm';
 import Modal from '@/components/ui/Modal';
 
+interface Step {
+    title: string;
+    description: string;
+}
+
 export default function Apply() {
     const t = useTranslations('programs');
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,8 +21,8 @@ export default function Apply() {
                 <div className="max-w-6xl mx-auto px-8 py-12">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                         <div className="flex-1">
-                            <h1 className="text-4xl font-bold text-black mb-4">{t('title')}</h1>
-                            <p className="text-lg text-black leading-relaxed max-w-3xl">
+                            <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('title')}</h1>
+                            <p className="text-lg text-gray-900 leading-relaxed max-w-3xl">
                                 {t('description')}
                             </p>
                         </div>
@@ -62,7 +67,7 @@ export default function Apply() {
                 <section className="mb-12">
                     <h2 className="text-2xl font-bold text-black mb-6">{t('howItWorks.title')}</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        {t.raw('howItWorks.steps').map((step: any, index: number) => (
+                        {t.raw('howItWorks.steps').map((step: Step, index: number) => (
                             <div key={index} className="bg-card border border-border rounded-lg p-6">
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="bg-accent-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">

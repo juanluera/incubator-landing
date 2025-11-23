@@ -1,16 +1,33 @@
 'use client';
 import { useTranslations } from 'next-intl';
 
+interface Stage {
+  number: string;
+  title: string;
+  description: string;
+  items?: string[];
+}
+
 export default function Programs() {
   const t = useTranslations('programs');
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            {t('title')}
+          </h1>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            {t('description')}
+          </p>
+        </div>
+
         {/* Program Stages */}
 
         {/* Program Stages */}
         <div className="space-y-8">
-          {t.raw('stages').map((stage: any, index: number) => {
+          {t.raw('stages').map((stage: Stage, index: number) => {
             const colors = ['bg-blue-600', 'bg-orange-600', 'bg-green-600', 'bg-purple-600'];
             const isLastStage = index === 3; // Stage 4 has special layout
 
