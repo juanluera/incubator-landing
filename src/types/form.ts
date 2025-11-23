@@ -1,18 +1,14 @@
-// Form field types
 export interface FormField {
   key: string;
-  label?: string; // Optional since we get labels from translations
   type: 'text' | 'email' | 'textarea' | 'select' | 'file';
   required?: boolean;
-  placeholder?: string;
-  options?: { value: string; label: string }[];
-  rows?: number;
   accept?: string;
-  maxSize?: number; // in MB
+  maxSize?: number;
+  rows?: number;
 }
 
 export interface FormConfig {
-  formType: 'waitlist' | 'network';
+  formType: string;
   apiEndpoint: string;
   fields: FormField[];
 }

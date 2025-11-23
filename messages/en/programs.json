@@ -2,47 +2,48 @@
   "programs": {
     "title": "The Tensor Program",
     "description": "A competitive non-profit accelerator program designed to identify and support the most promising founders across LATAM. We believe in merit-based selection and empowering exceptional talent.",
-    "stage1Title": "Application & Network Sourcing",
-    "stage1Description": "We collect applications from talented students and professionals across LATAM through our established MIT alumni network.",
-    "stage1Items": [
-      "Submit your startup idea with market rationale",
-      "Demonstrate product-market fit potential",
-      "Network-based referrals prioritized",
-      "Rolling applications accepted"
-    ],
-    "stage2Title": "2-Week Intensive Sprint",
-    "stage2Description": "Selected teams get two weeks to make maximum progress building their company. This is where execution meets ambition.",
-    "stage2Items": [
-      "Build MVP or significant prototype",
-      "Validate market assumptions",
-      "Competitive environment fosters excellence",
-      "Top 25 performers advance"
-    ],
-    "stage3Title": "Elite Interview Process",
-    "stage3Description": "Top 25 teams are interviewed and evaluated for commitment, scalability, and impact potential.",
-    "stage3Items": [
-      "In-depth founder interviews",
-      "Business model validation",
-      "Impact and sustainability assessment",
-      "Final 10 teams selected"
-    ],
-    "stage4Title": "Support & Resources",
-    "stage4Description": "Top 10 teams receive comprehensive support and access to our startup ecosystem, including participation in a month-long intensive convention.",
-    "supportStructureTitle": "Support Structure",
-    "supportStructureItems": [
-      "Mentorship and guidance",
-      "Strategic advisory support",
-      "Connections to potential investors",
-      "Performance-based milestone support"
-    ],
-    "tensorResourcesTitle": "Tensor Resources",
-    "tensorResourcesItems": [
-      "Month-long intensive convention",
-      "Legal and compliance guidance",
-      "Market connections and partnerships",
-      "Investor introduction opportunities"
-    ],
-    "missionPhilosophyTitle": "Our Mission Philosophy",
-    "missionPhilosophyText": "We believe in empowering exceptional founders to build transformative companies. Our mission is simple: provide maximum value and support to visionary entrepreneurs. We connect founders with resources, mentors, and potential investors, creating a thriving ecosystem for innovation."
+    "formButton": "Form",
+    "modalTitle": "Apply to Tensor",
+    "overview": {
+      "title": "Program Overview",
+      "content": "Tensor is designed to empower exceptional founders across LATAM. We provide mentorship, resources, and connections to help you build transformative companies. Our program focuses on merit-based selection and supporting visionary entrepreneurs."
+    },
+    "whatWeOffer": {
+      "title": "What We Offer",
+      "items": [
+        "Mentorship from experienced founders and industry leaders",
+        "Access to our network of investors and partners",
+        "Strategic guidance and business development support",
+        "Legal and compliance resources",
+        "Community of like-minded founders",
+        "Performance-based milestone support"
+      ]
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "title": "Apply",
+          "description": "Submit your application with your startup idea and demonstrate product-market fit potential."
+        },
+        {
+          "title": "Review",
+          "description": "Our team reviews applications and selects the most promising founders."
+        },
+        {
+          "title": "Join",
+          "description": "Selected teams receive comprehensive support and access to our startup ecosystem."
+        }
+      ]
+    },
+    "eligibility": {
+      "title": "Who Should Apply",
+      "items": [
+        "Ambitious founders with innovative ideas",
+        "Teams committed to building scalable companies",
+        "Entrepreneurs focused on creating impact in LATAM",
+        "Founders seeking mentorship and strategic guidance"
+      ]
+    }
   }
 }

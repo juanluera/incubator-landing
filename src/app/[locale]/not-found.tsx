@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 transition-colors">
       <div className="max-w-md mx-auto text-center px-4">
-        
+
         {/* 404 Number */}
         <div className="mb-8">
           <h1 className="text-9xl font-bold text-gray-900 dark:text-white opacity-20">
@@ -30,7 +30,7 @@ export default function NotFound() {
           >
             Back to Home
           </Link>
-          
+
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
             <Link
               href="/about"
@@ -45,7 +45,7 @@ export default function NotFound() {
               Programs
             </Link>
             <Link
-              href="/waitlist"
+              href="/apply"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
             >
               Join Waitlist

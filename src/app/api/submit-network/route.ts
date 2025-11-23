@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabase'
+import { supabase } from '@/config/supabase'
 import { sendConfirmationEmail } from '@/lib/email'
 import { NextRequest, NextResponse } from 'next/server'
 

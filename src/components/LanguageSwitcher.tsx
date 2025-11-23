@@ -9,28 +9,26 @@ export default function LanguageSwitcher() {
     const pathname = usePathname();
 
     const switchLanguage = (newLocale: 'en' | 'es') => {
-        router.replace(pathname,{locale : newLocale});
+        router.replace(pathname, { locale: newLocale });
     };
 
     return (
         <div className="flex gap-2">
             <button
                 onClick={() => switchLanguage('en')}
-                className={`px-3 py-1 rounded ${
-                    locale === 'en'
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-200 text-gray-800'
-                }`}
+                className={`px-3 py-1 rounded transition-colors ${locale === 'en'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-border text-foreground hover:bg-border/80'
+                    }`}
             >
                 English
             </button>
             <button
                 onClick={() => switchLanguage('es')}
-                className={`px-3 py-1 rounded ${
-                    locale === 'es'
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-200 text-gray-800'
-                }`}
+                className={`px-3 py-1 rounded transition-colors ${locale === 'es'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-border text-foreground hover:bg-border/80'
+                    }`}
             >
                 Spanish
             </button>

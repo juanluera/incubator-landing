@@ -1,20 +1,57 @@
 {
-    "about":{
+    "about": {
         "title": "Meet Our Team",
         "ourMission": "Our Mission",
         "missionDescription": "We connect talented founders with the resources they need to build successful startups.",
         "leadershipTeam": "Leadership Team",
-        "coFounder": "Co-Founder",
-        "angelBio": "MIT alumni with double major in Physics and EECS. Former Amazon engineer and startup co-founder with deep technical expertise in engineering and product development.",
-        "sebastianBio": "MIT alumni with double major in CS and Physics, currently pursuing Masters in CS. NVIDIA engineer with expertise in AI and high-performance computing.",
-        "antonioBio": "MIT alumni with double major in Physics and EECS. Microsoft Software Engineer with startup experience and expertise in software development and engineering.",
-        "cruzBio": "MIT alumni with double major in Aero/Astro and Physics. Former SpaceX engineer and current PhD candidate in Aeronautics and Astronautics at Stanford with expertise in aerospace engineering and advanced propulsion systems.",
-        "advisors": "Our Advisors",
-        "gyalpoTitle": "AI Entrepreneur & MIT Alumni",
-        "gyalpoBio": "MIT alumni with Master's degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform. Part of Prod Cohort 2. Currently a startup founder.",
-        "abrahamTitle": "AI Forward Deployed Engineer + Entrepreneur & MIT Alumni",
-        "abrahamBio": "MIT Alumni with a Master of Science in Management of Technology. Founder and former CTO of Relativity6, built mission-critical AI Workflows with 99.5% SLA compliance for Fortune 500 Companies.",
+        "advisorsTitle": "Our Advisors",
         "ourStory": "Our Story",
-        "ourStoryDescription": "We are a group of MIT alumni who are passionate about building successful startups and making innovation happen in LATAM. We are dedicated to helping founders build their niche and achieve their goals."
+        "ourStoryDescription": "We are a group of MIT alumni who are passionate about building successful startups and making innovation happen in LATAM. We are dedicated to helping founders build their niche and achieve their goals.",
+        "team": [
+        {
+            "name": "Juan Angel Luera",
+            "image": "/AngelLuera.jpg",
+            "link": "https://juanluera.netlify.app/",
+            "role": "Co-Founder",
+            "bio": "MIT alumni with double major in Physics and EECS. Former Amazon engineer and startup co-founder with deep technical expertise in engineering and product development."
+        },
+        {
+            "name": "Sebastian Alberdi",
+            "image": "/SebastianAlberdi.jpg",
+            "link": "https://www.linkedin.com/in/salberdi/",
+            "role": "Co-Founder",
+            "bio": "MIT alumni with double major in CS and Physics, currently pursuing Masters in CS. NVIDIA engineer with expertise in AI and high-performance computing."
+        },
+        {
+            "name": "Juan Antonio Luera",
+            "image": "/AntonioLuera.jpg",
+            "link": "https://www.linkedin.com/in/antoniol19/",
+            "role": "Co-Founder",
+            "bio": "MIT alumni with double major in Physics and EECS. Microsoft Software Engineer with startup experience and expertise in software development and engineering."
+        },
+        {
+            "name": "Cruz Soto",
+            "image": "/CruzSoto.jpg",
+            "link": "https://www.linkedin.com/in/cruz-soto/",
+            "role": "Co-Founder",
+            "bio": "MIT alumni with double major in Aero/Astro and Physics. Former SpaceX engineer and current PhD candidate in Aeronautics and Astronautics at Stanford with expertise in aerospace engineering and advanced propulsion systems."
+        }
+        ],
+        "advisors": [
+        {
+            "name": "Gyalpo Dongo",
+            "image": "/GyalpoDongo.jpg",
+            "link": "https://www.linkedin.com/in/gyalpodongo/",
+            "title": "AI Entrepreneur & MIT Alumni",
+            "bio": "MIT alumni with Master's degree in Computer Science, specializing in AI. Former founder of Xplain, an AI-powered educational platform in Latin America serving 50,000 students that raised $600k in funding. Part of Prod Cohort 2, an MIT-Harvard accelerator with 40 Billion AUM. Currently founder of a startup."
+        },
+        {
+            "name": "Abraham Cristiani",
+            "image": "/AbrahamCristiani.jpg",
+            "link": "https://www.linkedin.com/in/abrahamcristiani/",
+            "title": "AI Forward Deployed Engineer + Entrepreneur & MIT Alumni",
+            "bio": "MIT Alumni with a Master of Science in Management of Technology. Founder and former CTO of Relativity6, built mission-critical AI Workflows with 99.5% SLA compliance for Fortune 500 Companies."
+        }
+        ]
     }
 }

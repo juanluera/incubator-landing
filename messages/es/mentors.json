@@ -1,0 +1,23 @@
+{
+    "mentors": {
+        "title": "Nuestros Mentores",
+        "subtitle": "Conoce a los líderes de la industria y expertos que guían a nuestras startups hacia el éxito.",
+        "viewLinkedin": "Ver LinkedIn",
+        "list": {
+            "benjamin": {
+                "name": "Benjamin Soria",
+                "role": "Mentor",
+                "bio": "Graduado de MIT en EECS y MechE con experiencia en investigación en los laboratorios de Robótica Distribuida y Sistemas Inteligentes de Aprendizaje del CSAIL. Actualmente Co-fundador de Tangible Robotics.",
+                "image": "/BenjaminStartup.jpeg",
+                "linkedin": "https://www.linkedin.com/in/benjamin-soria00/"
+            },
+            "fabian": {
+                "name": "Fabian Yanes Laguna",
+                "role": "Mentor",
+                "bio": "Ex Ingeniero de Software en Dell y Amazon con experiencia en investigación de IA en MIT. Actualmente Co-fundador y CTO de Contraca, una startup que automatiza la extracción de datos y flujos de trabajo inmobiliarios.",
+                "image": "/FabianPicture.jpeg",
+                "linkedin": "https://linkedin.com/in/fabianyaneslaguna"
+            }
+        }
+    }
+}

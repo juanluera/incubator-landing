@@ -7,7 +7,8 @@ export const WAITLIST_FIELDS: FormField[] = [
   { key: 'school', type: 'text', required: true },
   { key: 'description', type: 'textarea', rows: 4 },
   { key: 'status', type: 'select', required: true },
-  { key: 'cv', type: 'file', required: true, accept: '.pdf,.doc,.docx', maxSize: 2 },
+  { key: 'story', type: 'textarea', rows: 6, required: false },
+  { key: 'cv', type: 'file', required: false, accept: '.pdf,.doc,.docx', maxSize: 2 },
 ];
 
 export const NETWORK_FIELDS: FormField[] = [

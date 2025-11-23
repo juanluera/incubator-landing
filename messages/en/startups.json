@@ -1,0 +1,38 @@
+{
+    "startups": {
+        "startupsList": [
+            {
+                "name": "MyCo",
+                "logo": "/MyCo_logo.jpeg",
+                "pitch": "MyCo empowers businesses with seamless data integration, transformation, and analysis to drive growth and smart decisions.",
+                "background": "MyCo simplifies the integration, transformation, and analysis of your company's data in a simple and powerful way. We deeply believe in the strategic value of information and how, with the right technologies, data can become a real engine of growth, efficiency, and intelligent decision-making. Our priority is to offer frictionless integration, capable of connecting with any internal or external system. MyCo automates the extraction, cleaning, and standardization of data through modern ETL processes, ensuring that your information travels from its original sources to a unified, clean model ready for analysis without manual effort. Thanks to this robust transformation layer, your company can create customized KPIs, interactive dashboards, automated reports, and machine learning models ready for production. We transform scattered, inconsistent, or hard-to-handle data into actionable, reliable, and always up-to-date insights. With MyCo, every process—from data ingestion to visualization or prediction—becomes fluid, transparent, and fully adaptable to your organization's needs. Whether optimizing operations, improving strategy, or driving new opportunities, we turn your data into real decisions that generate impact.",
+                "members": [
+                    {
+                        "name": "Ramses",
+                        "role": "Co-founder",
+                        "bio": "Experienced leader in data and technology.",
+                        "image": "/MyCo_logo.jpeg",
+                        "personal-link": "/startups/myco"
+                    },
+                    {
+                        "name": "Leo",
+                        "role": "Co-founder",
+                        "bio": "Expert in data engineering and AI.",
+                        "image": "/MyCo_logo.jpeg",
+                        "personal-link": "/startups/myco"
+                    },
+                    {
+                        "name": "Diego",
+                        "role": "Co-founder",
+                        "bio": "Innovative thinker and problem solver.",
+                        "image": "/MyCo_logo.jpeg",
+                        "personal-link": "/startups/myco"
+                    }
+                ]
+            }
+        ],
+        "title": "Our Builders",
+        "background": "Background",
+        "teamMembers": "Team Members"
+    }
+}

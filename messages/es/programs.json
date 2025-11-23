@@ -2,47 +2,48 @@
   "programs": {
     "title": "El Programa Tensor",
     "description": "Un programa acelerador sin fines de lucro competitivo diseñado para identificar y apoyar a los fundadores más prometedores en LATAM. Creemos en la selección basada en el mérito y en empoderar al talento excepcional.",
-    "stage1Title": "Aplicación y Fuentes de Red",
-    "stage1Description": "Recopilamos aplicaciones de estudiantes talentosos y profesionales en LATAM a través de nuestra red establecida de ex alumnos de MIT.",
-    "stage1Items": [
-      "Presenta tu idea de startup con justificación de mercado",
-      "Demuestra el potencial de ajuste producto-mercado",
-      "Referencias basadas en la red priorizadas",
-      "Aplicaciones continuas aceptadas"
-    ],
-    "stage2Title": "Sprint Intensivo de 2 Semanas",
-    "stage2Description": "Los equipos seleccionados obtienen dos semanas para hacer el máximo progreso construyendo su empresa. Aquí es donde la ejecución se encuentra con la ambición.",
-    "stage2Items": [
-      "Construir MVP o prototipo significativo",
-      "Validar supuestos de mercado",
-      "Ambiente competitivo fomenta la excelencia",
-      "Los 25 equipos más prometedores avanzan"
-    ],
-    "stage3Title": "Proceso de Entrevista Elite",
-    "stage3Description": "Los 25 mejores equipos son entrevistados y evaluados por compromiso, escalabilidad y potencial de impacto.",
-    "stage3Items": [
-      "Entrevistas profundas con fundadores",
-      "Validación del modelo de negocio",
-      "Evaluación de impacto y sostenibilidad",
-      "10 equipos finales seleccionados"
-    ],
-    "stage4Title": "Apoyo y Recursos",
-    "stage4Description": "Los 10 mejores equipos reciben apoyo integral y acceso a nuestro ecosistema de startups, incluyendo participación en una convención intensiva de un mes.",
-    "supportStructureTitle": "Estructura de Apoyo",
-    "supportStructureItems": [
-      "Mentoría y orientación",
-      "Apoyo asesor estratégico",
-      "Conexiones con inversores potenciales",
-      "Apoyo a hitos basado en el desempeño"
-    ],
-    "tensorResourcesTitle": "Recursos Tensor",
-    "tensorResourcesItems": [
-      "Convención intensiva de un mes",
-      "Orientación legal y de cumplimiento",
-      "Conexiones de mercado y asociaciones",
-      "Oportunidades de presentación a inversores"
-    ],
-    "missionPhilosophyTitle": "Nuestra Filosofía de Misión",
-    "missionPhilosophyText": "Creemos en empoderar a fundadores excepcionales para construir empresas transformadoras. Nuestra misión es simple: brindar máximo valor y apoyo a emprendedores visionarios. Conectamos fundadores con recursos, mentores e inversores potenciales, creando un ecosistema próspero para la innovación."
+    "formButton": "Formulario",
+    "modalTitle": "Aplicar a Tensor",
+    "overview": {
+      "title": "Descripción del Programa",
+      "content": "Tensor está diseñado para empoderar a fundadores excepcionales en LATAM. Proporcionamos mentoría, recursos y conexiones para ayudarte a construir empresas transformadoras. Nuestro programa se enfoca en la selección basada en el mérito y en apoyar a emprendedores visionarios."
+    },
+    "whatWeOffer": {
+      "title": "Lo Que Ofrecemos",
+      "items": [
+        "Mentoría de fundadores experimentados y líderes de la industria",
+        "Acceso a nuestra red de inversores y socios",
+        "Orientación estratégica y apoyo en desarrollo de negocios",
+        "Recursos legales y de cumplimiento",
+        "Comunidad de fundadores con ideas afines",
+        "Apoyo basado en el desempeño de hitos"
+      ]
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "steps": [
+        {
+          "title": "Aplicar",
+          "description": "Envía tu solicitud con tu idea de startup y demuestra el potencial de ajuste producto-mercado."
+        },
+        {
+          "title": "Revisión",
+          "description": "Nuestro equipo revisa las solicitudes y selecciona a los fundadores más prometedores."
+        },
+        {
+          "title": "Únete",
+          "description": "Los equipos seleccionados reciben apoyo integral y acceso a nuestro ecosistema de startups."
+        }
+      ]
+    },
+    "eligibility": {
+      "title": "Quién Debe Aplicar",
+      "items": [
+        "Fundadores ambiciosos con ideas innovadoras",
+        "Equipos comprometidos a construir empresas escalables",
+        "Emprendedores enfocados en crear impacto en LATAM",
+        "Fundadores que buscan mentoría y orientación estratégica"
+      ]
+    }
   }
 }

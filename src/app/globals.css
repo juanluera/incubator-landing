@@ -2,22 +2,49 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  
+  /* Pure white main background */
+  --foreground: #8b7e74;
+  /* Soft warm brown pastel text */
+  --primary: #d4b5a0;
+  /* Soft beige-tan pastel */
+  --primary-foreground: #5c4f45;
+  /* Muted brown for text on primary */
+  --card: #faf7f2;
+  /* Soft cream beige card background */
+  --card-foreground: #8b7e74;
+  /* Soft warm brown text on cards */
+  --border: #e8dfd5;
+  /* Soft beige border */
+  --muted: #f5f0e8;
+  /* Soft warm beige */
+  --accent: #e6d5c3;
+  /* Soft sand beige pastel */
+  --nav-footer-bg: #f5efe6;
+  /* Light beige for navbar and footer */
+  --heading: #9d8b7a;
+  /* Soft warm tan for headings */
+  --accent-blue: #6b9cc3;
+  /* Vibrant yet muted blue that complements beige */
+  --accent-blue-hover: #5a8ab3;
+  /* Darker vibrant blue for hover states */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-nav-footer-bg: var(--nav-footer-bg);
+  --color-heading: var(--heading);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-blue-hover: var(--accent-blue-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

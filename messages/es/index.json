@@ -3,39 +3,63 @@
         "home": "Inicio",
         "about": "Nosotros",
         "programs": "Programas",
+        "startups": "Startups",
         "network": "Únete a nuestra Red",
         "programWaitlist": "Lista de Espera"
-      },
+    },
     "hero": {
         "title": "Tensor",
         "description": "Donde las mentes más brillantes de LATAM construyen el futuro.",
         "cta": "Únete a la Lista"
     },
     "footer": {
-      "description": "Donde las mentes más brillantes de LATAM construyen el futuro.",
-      "quickLinks": "Enlaces Rápidos",
-      "connect": "Conectar",
-      "copyright": "Tensor. Todos los derechos reservados.",
-      "privacyPolicy": "Política de Privacidad",
-      "termsOfService": "Términos de Servicio",
-      "contact": "Contacto",
-      "aboutUs": "Nosotros",
-      "programs": "Programas",
-      "joinWaitlist": "Únete a la Lista de Espera"
+        "description": "Donde las mentes más brillantes de LATAM construyen el futuro.",
+        "quickLinks": "Enlaces Rápidos",
+        "connect": "Conectar",
+        "copyright": "Tensor. Todos los derechos reservados.",
+        "privacyPolicy": "Política de Privacidad",
+        "termsOfService": "Términos de Servicio",
+        "contact": "Contacto",
+        "aboutUs": "Nosotros",
+        "programs": "Programas",
+        "joinWaitlist": "Únete a la Lista de Espera"
     },
     "forms": {
         "waitlist": {
             "title": "Únete a la Lista de Espera",
+            "description": "¡Estamos emocionados de conocerte mejor! Completa el formulario a continuación y nos pondremos en contacto.",
             "successTitle": "¡Formulario de Interés Enviado!",
             "successMessage": "Gracias por tu interés. Nos pondremos en contacto pronto.",
             "submitButton": "Enviar",
             "fields": {
-                "name": { "label": "Nombre Completo", "placeholder": "Ingresa tu nombre completo" },
-                "email": { "label": "Correo Electrónico", "placeholder": "Ingresa tu correo electrónico" },
-                "school": { "label": "Escuela/Universidad", "placeholder": "ej., MIT, Stanford, Universidad de Chile" },
-                "description": { "label": "Mayor Logro", "placeholder": "Describe tu logro más significativo (académico, profesional, proyecto personal, etc.)" },
-                "status": { "label": "Estado Actual", "placeholder": "Selecciona tu estado" },
-                "cv": { "label": "CV/Resumen", "placeholder": "Sube tu CV/Resumen" }
+                "name": {
+                    "label": "Nombre Completo",
+                    "placeholder": "Ingresa tu nombre completo"
+                },
+                "email": {
+                    "label": "Correo Electrónico",
+                    "placeholder": "Ingresa tu correo electrónico"
+                },
+                "school": {
+                    "label": "Escuela/Universidad",
+                    "placeholder": "ej., MIT, Stanford, Universidad de Chile"
+                },
+                "description": {
+                    "label": "Mayor Logro",
+                    "placeholder": "Describe tu logro más significativo (académico, profesional, proyecto personal, etc.)"
+                },
+                "status": {
+                    "label": "Estado Actual",
+                    "placeholder": "Selecciona tu estado"
+                },
+                "story": {
+                    "label": "Cuéntanos Tu Historia (Opcional)",
+                    "placeholder": "Comparte tu trayectoria, qué te motiva, tu visión, o cualquier otra cosa que quieras que sepamos sobre ti..."
+                },
+                "cv": {
+                    "label": "CV/Resumen (Opcional)",
+                    "placeholder": "Sube tu CV/Resumen"
+                }
             },
             "statusOptions": {
                 "student": "Estudiante",
@@ -45,19 +69,47 @@
         },
         "network": {
             "title": "Únete a Nuestra Red",
+            "description": "¡Estamos emocionados de conocerte mejor! Completa el formulario a continuación y nos pondremos en contacto.",
             "successTitle": "¡Formulario de Interés de Red Enviado!",
             "successMessage": "Gracias por tu interés en unirte a nuestra red de mentores. Nos pondremos en contacto pronto.",
             "submitButton": "Enviar",
             "fields": {
-                "name": { "label": "Nombre Completo", "placeholder": "Ingresa tu nombre completo" },
-                "email": { "label": "Correo Electrónico", "placeholder": "Ingresa tu correo electrónico" },
-                "company": { "label": "Empresa Actual", "placeholder": "ej., Google, Microsoft, Nombre de Startup" },
-                "position": { "label": "Posición Actual", "placeholder": "ej., Ingeniero de Software Senior, Gerente de Producto, CEO" },
-                "experience": { "label": "Años de Experiencia", "placeholder": "Selecciona nivel de experiencia" },
-                "industry": { "label": "Industria/Experiencia", "placeholder": "ej., IA/ML, Fintech, Salud, Comercio Electrónico" },
-                "mentorship_areas": { "label": "Áreas en las que Puedes Mentorar", "placeholder": "Describe las áreas en las que puedes brindar orientación (ej., desarrollo técnico, estrategia de producto, recaudación de fondos, escalamiento de equipos)" },
-                "motivation": { "label": "¿Por qué quieres unirte a nuestra red?", "placeholder": "Cuéntanos sobre tu motivación para mentorar y apoyar a fundadores emergentes" },
-                "cv": { "label": "CV/Resumen (Opcional)", "placeholder": "Sube tu CV/Resumen (opcional)" }
+                "name": {
+                    "label": "Nombre Completo",
+                    "placeholder": "Ingresa tu nombre completo"
+                },
+                "email": {
+                    "label": "Correo Electrónico",
+                    "placeholder": "Ingresa tu correo electrónico"
+                },
+                "company": {
+                    "label": "Empresa Actual",
+                    "placeholder": "ej., Google, Microsoft, Nombre de Startup"
+                },
+                "position": {
+                    "label": "Posición Actual",
+                    "placeholder": "ej., Ingeniero de Software Senior, Gerente de Producto, CEO"
+                },
+                "experience": {
+                    "label": "Años de Experiencia",
+                    "placeholder": "Selecciona nivel de experiencia"
+                },
+                "industry": {
+                    "label": "Industria/Experiencia",
+                    "placeholder": "ej., IA/ML, Fintech, Salud, Comercio Electrónico"
+                },
+                "mentorship_areas": {
+                    "label": "Áreas en las que Puedes Mentorar",
+                    "placeholder": "Describe las áreas en las que puedes brindar orientación (ej., desarrollo técnico, estrategia de producto, recaudación de fondos, escalamiento de equipos)"
+                },
+                "motivation": {
+                    "label": "¿Por qué quieres unirte a nuestra red?",
+                    "placeholder": "Cuéntanos sobre tu motivación para mentorar y apoyar a fundadores emergentes"
+                },
+                "cv": {
+                    "label": "CV/Resumen (Opcional)",
+                    "placeholder": "Sube tu CV/Resumen (opcional)"
+                }
             },
             "experienceOptions": {
                 "1-3": "1-3 años",
