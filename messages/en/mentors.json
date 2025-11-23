@@ -1,21 +1,23 @@
 {
-    "title": "Our Mentors",
-    "subtitle": "Meet the industry leaders and experts guiding our startups to success.",
-    "viewLinkedin": "View LinkedIn",
     "mentors": {
-        "benjamin": {
-            "name": "Benjamin Soria",
-            "role": "Mentor",
-            "bio": "MIT EECS & MechE graduate with research experience at CSAIL's Distributed Robotics and Learning & Intelligent Systems Labs. Currently Co-founder of Tangible Robotics.",
-            "image": "/BenjaminStartup.jpeg",
-            "linkedin": "https://www.linkedin.com/in/benjamin-soria00/"
-        },
-        "fabian": {
-            "name": "Fabian Yanes Laguna",
-            "role": "Mentor",
-            "bio": "Former Software Engineer at Dell and Amazon with AI research experience at MIT. Currently Co-founder and CTO of Contraca, a seed startup automating real estate data extraction and workflows.",
-            "image": "/FabianPicture.jpeg",
-            "linkedin": "https://linkedin.com/in/fabianyaneslaguna"
+        "title": "Our Mentors",
+        "subtitle": "Meet the industry leaders and experts guiding our startups to success.",
+        "viewLinkedin": "View LinkedIn",
+        "list": {
+            "benjamin": {
+                "name": "Benjamin Soria",
+                "role": "Mentor",
+                "bio": "MIT EECS & MechE graduate with research experience at CSAIL's Distributed Robotics and Learning & Intelligent Systems Labs. Currently Co-founder of Tangible Robotics.",
+                "image": "/BenjaminStartup.jpeg",
+                "linkedin": "https://www.linkedin.com/in/benjamin-soria00/"
+            },
+            "fabian": {
+                "name": "Fabian Yanes Laguna",
+                "role": "Mentor",
+                "bio": "Former Software Engineer at Dell and Amazon with AI research experience at MIT. Currently Co-founder and CTO of Contraca, a seed startup automating real estate data extraction and workflows.",
+                "image": "/FabianPicture.jpeg",
+                "linkedin": "https://linkedin.com/in/fabianyaneslaguna"
+            }
         }
     }
 }
