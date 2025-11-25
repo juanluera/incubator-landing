@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 export default function MentorsPage() {
     const t = useTranslations('mentors');
 
-    const mentorIds = ['fabian'];
+    const mentorIds = ['fabian', 'benjamin'];
 
     return (
         <div className="min-h-screen bg-background">
