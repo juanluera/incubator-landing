@@ -91,6 +91,16 @@ export default function Header() {
                   </div>
                 )}
               </div>
+
+              {/* Contact Us Button */}
+              <a
+                href="https://cal.com/tensor-ovyulp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-accent-blue transition-colors text-lg font-medium"
+              >
+                {translations('contact')}
+              </a>
             </div>
           </div>
 
@@ -141,6 +151,15 @@ export default function Header() {
               >
                 Mentors
               </Link>
+              <a
+                href="https://cal.com/tensor-ovyulp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 text-black hover:text-accent-blue hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {translations('contact')}
+              </a>
               <div className="mt-4">
                 <Link
                   href="/apply"
